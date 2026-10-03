@@ -1,0 +1,22 @@
+{
+  "name": "poc-apple-magic-keyboard-pro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Página de produto satírica para um teclado de duas teclas feito para vibe coding.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/check-site.mjs dist",
+    "preview": "vite preview",
+    "check": "npm run format:check && node --check src/app.js && node scripts/check-site.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.9.9",
+    "vite": "8.3.2"
+  }
+}
